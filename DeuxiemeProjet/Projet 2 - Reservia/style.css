@@ -35,7 +35,7 @@ header {
 }
   
   .navi #navi-link-accomodation > .underline-effect {
-    background: #0065fc;
+    background: black;
 }
   
   .navi #navi-link-activities:hover > .underline-effect {
@@ -414,7 +414,7 @@ header {
   }
   
   .hostingMainCardGradeIcon {
-    color: #0065fc;
+    color: #0065fc; /*-- star color --*/ 
   }
   
   .hostingMainCardGradeIconEmpty {

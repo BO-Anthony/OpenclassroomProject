@@ -67,7 +67,7 @@ header {
   .navi #navi-link-accomodation a:hover {
     color: #0065fc
   }
-  
+
   #navi-link-accomodation a {
     color: black;
 }
@@ -93,7 +93,7 @@ header {
 }
   
   .navi .active-link {
-    color: #0065fc;
+    color: black;
 }
 
   main {

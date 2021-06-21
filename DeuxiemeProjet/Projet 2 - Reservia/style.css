@@ -33,8 +33,12 @@ header {
     height: 3px;
     background: white;
 }
-   
-  .navi #navi-link-activities:hover > .underline-effect {
+
+.navi #navi-link-accomodations:hover >.underline-effect {
+    background: #0065fc;
+}
+
+.navi #navi-link-activities:hover > .underline-effect {
     background: #0065fc;
 }
   

@@ -35,7 +35,7 @@ header {
 }
   
   .navi #navi-link-accomodation > .underline-effect {
-    background: black;
+    background: none;
 }
   
   .navi #navi-link-activities:hover > .underline-effect {

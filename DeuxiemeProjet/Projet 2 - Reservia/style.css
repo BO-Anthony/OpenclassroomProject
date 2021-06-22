@@ -708,19 +708,19 @@ header {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas:
-      "logo navbar-link-sign-up"
-      "navbar-link-accomodation navbar-link-activities";
+      "logo navi-link-sign-up"
+      "navi-link-accomodation navi-link-activities";
     }
     .navi img {
       grid-area: logo;
     }
     .navi #navi-link-accomodation {
       flex-direction: column-reverse;
-      grid-area: navbar-link-accomodation;
+      grid-area: navi-link-accomodation;
     }
-    .navi #avi-link-activities {
+    .navi #navi-link-activities {
       flex-direction: column-reverse;
-      grid-area: navbar-link-activities;
+      grid-area: navi-link-activities;
     }
     .navi #navi-link-activities .underline-effect {
       background-color: #dbdbdb;
@@ -728,7 +728,7 @@ header {
     .navi #navi-link-sign-up {
       display: flex;
       justify-content: flex-end;
-      grid-area: navbar-link-sign-up;
+      grid-area: navi-link-sign-up;
     }
   
     .research-box {
@@ -739,7 +739,7 @@ header {
       width: 300px;
       height: 49px;
     }
-    #button-research {
+    .button-research {
       display: none;
     }
     #icon-glass {

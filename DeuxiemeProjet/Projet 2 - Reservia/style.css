@@ -718,6 +718,9 @@ header {
       flex-direction: column-reverse;
       grid-area: navi-link-accomodation;
     }
+    .navi #navi-link-accomodation .underline-effect{
+      background-color: #dbdbdb;
+    }  
     .navi #navi-link-activities {
       flex-direction: column-reverse;
       grid-area: navi-link-activities;

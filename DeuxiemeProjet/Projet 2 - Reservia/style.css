@@ -667,7 +667,7 @@ header {
       grid-template-rows: 1fr 1fr 1fr;
     }
     .bloc-most-popular {
-      display:block;
+      display:flex;
       justify-content: center;
       align-items: stretch;
       height: 560px;

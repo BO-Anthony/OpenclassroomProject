@@ -358,7 +358,7 @@ header {
     align-items: center;
     width: 40%;
     height: 100%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
   
   }
   
@@ -667,7 +667,7 @@ header {
       grid-template-rows: 1fr 1fr 1fr;
     }
     .bloc-most-popular {
-      display: flex;
+      display:block;
       justify-content: center;
       align-items: stretch;
       height: 560px;

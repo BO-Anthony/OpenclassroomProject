@@ -320,7 +320,7 @@ header {
   .most-populars {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr;
     row-gap: 25px;
     height: 90%;
     width: 90%;
@@ -358,7 +358,7 @@ header {
     align-items: center;
     width: 40%;
     height: 100%;
-    border-radius: 15px 0 0 15px;
+    border-radius: 10px 0 0 10px;
   
   }
   

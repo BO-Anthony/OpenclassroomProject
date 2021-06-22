@@ -19,7 +19,7 @@ header {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 5fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "logo . accomodation activities sign-up";
 }
@@ -28,17 +28,24 @@ header {
     padding: 0;
 }
 
+.navi .navi-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .navi .navi-link .underline-effect {
     width: 100%;
     height: 3px;
     background: white;
 }
-  
-  .navi #navi-link-accomodation > .underline-effect {
+
+.navi #navi-link-accomodation:hover >.underline-effect {
     background: #0065fc;
 }
-  
-  .navi #navi-link-activities:hover > .underline-effect {
+
+.navi #navi-link-activities:hover > .underline-effect {
     background: #0065fc;
 }
   
@@ -62,11 +69,16 @@ header {
   
   .navi #navi-link-accomodation {
     grid-area: accomodation;
+    color:black;
 }
-  
-  #navi-link-accomodation a {
+  .navi #navi-link-accomodation a:hover {
     color: #0065fc;
+  }
+
+  #navi-link-accomodation a {
+    color: black;
 }
+
   
   .navi #navi-link-activities {
     grid-area: activities;
@@ -409,7 +421,7 @@ header {
   }
   
   .hostingMainCardGradeIcon {
-    color: #0065fc;
+    color: #0065fc; /*-- star color --*/ 
   }
   
   .hostingMainCardGradeIconEmpty {
@@ -655,7 +667,7 @@ header {
       grid-template-rows: 1fr 1fr 1fr;
     }
     .bloc-most-popular {
-      display: flex;
+      display:flex;
       justify-content: center;
       align-items: stretch;
       height: 560px;
@@ -696,19 +708,22 @@ header {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas:
-      "logo navbar-link-sign-up"
-      "navbar-link-accomodation navbar-link-activities";
+      "logo navi-link-sign-up"
+      "navi-link-accomodation navi-link-activities";
     }
     .navi img {
       grid-area: logo;
     }
     .navi #navi-link-accomodation {
       flex-direction: column-reverse;
-      grid-area: navbar-link-accomodation;
+      grid-area: navi-link-accomodation;
     }
-    .navi #avi-link-activities {
+    .navi #navi-link-accomodation .underline-effect{
+      background-color: #dbdbdb;
+    }  
+    .navi #navi-link-activities {
       flex-direction: column-reverse;
-      grid-area: navbar-link-activities;
+      grid-area: navi-link-activities;
     }
     .navi #navi-link-activities .underline-effect {
       background-color: #dbdbdb;
@@ -716,7 +731,7 @@ header {
     .navi #navi-link-sign-up {
       display: flex;
       justify-content: flex-end;
-      grid-area: navbar-link-sign-up;
+      grid-area: navi-link-sign-up;
     }
   
     .research-box {
@@ -727,8 +742,8 @@ header {
       width: 300px;
       height: 49px;
     }
-    #button-research {
-      display: none;
+    .button-research {
+      display:none;
     }
     #icon-glass {
       display: block;

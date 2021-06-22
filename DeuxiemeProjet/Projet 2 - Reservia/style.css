@@ -739,10 +739,10 @@ header {
       width: 300px;
       height: 49px;
     }
-    .button-research {
+    #button-research {
       display: none;
     }
-    .icon-glass {
+    #icon-glass {
       display: block;
       position: absolute;
       right: -20px;

@@ -69,14 +69,14 @@ header {
   
   .navi #navi-link-accomodation {
     grid-area: accomodation;
-    
+    color:black;
 }
   .navi #navi-link-accomodation a:hover {
-    color: #0065fc
+    color: #0065fc;
   }
 
   #navi-link-accomodation a {
-    color: #0065fc;
+    color: black;
 }
 
   
@@ -742,7 +742,7 @@ header {
     .button-research {
       display: none;
     }
-    #icon-glass {
+    .icon-glass {
       display: block;
       position: absolute;
       right: -20px;

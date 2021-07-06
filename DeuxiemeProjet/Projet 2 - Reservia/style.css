@@ -138,7 +138,7 @@ header {
   .fa-map-marker-alt { 
     font-size: 17px;
   }
-  .fap-map-marker-alt::before {
+  .fap-map-marker-alt:before { 
     content: "\f3c5";
   }
   

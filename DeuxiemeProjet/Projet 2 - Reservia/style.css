@@ -135,8 +135,11 @@ header {
     border-radius: 14px 0 0 14px;
   }
   
-  .fa-map-marker-alt {
+  .fa-map-marker-alt { 
     font-size: 17px;
+  }
+  .fap-map-marker-alt::before {
+    content: "\f3c5";
   }
   
   .research-bar {

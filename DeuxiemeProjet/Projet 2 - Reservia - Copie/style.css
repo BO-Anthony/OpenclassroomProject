@@ -309,26 +309,29 @@ header {
   
   .most-popular#popular-room1 {
     display: flex;
-    height: 9em;
-    width: 21.43em;
-    border-radius: 1em;
-    margin: 0.875em
+    margin: 0;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px 0 7px 7px;
+    box-shadow: 0px 0px 6px 0px #0000002e;
   }
   
   .most-popular#popular-room2 {
     display: flex;
-    height: 9em;
-    width: 21.43em;
-    border-radius: 1em;
-    margin: 0.875em
+    margin: 0;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px 0 7px 7px;
+    box-shadow: 0px 0px 6px 0px #0000002e;
   }
   
   .most-popular#popular-room3 {
     display: flex;
-    height: 9em;
-    width: 21.43em;
-    border-radius: 1em;
-    margin: 0.875em
+    margin: 0;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px 0 7px 7px;
+    box-shadow: 0px 0px 6px 0px #0000002e;
   }
   
   .price {
@@ -461,4 +464,3 @@ header {
     margin-right: 20%;
   }
 
-  

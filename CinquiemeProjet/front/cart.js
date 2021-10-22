@@ -171,7 +171,7 @@ btnEnvoiFormulaire.addEventListener("click", (e) => {
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
-        window.location.href = `${window.location.origin}/front/confirmation.html?orderId=${json.orderId}`;
+        window.location.href = `confirmation.html?orderId=${json.orderId}`;
       })
       .catch(() => {
         alert(error);

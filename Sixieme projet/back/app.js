@@ -1,11 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-const sauceRoutes = require('./routes/sauces');
-const userRoutes = require('./routes/auth');
+const sauceRoutes = require('./controllers/sauces');
+const userRoutes = require('./controllers/auth');
 
 //------Connexion a Moongoose
-mongoose.connect('mongodb+srv://president:oaken@cluster0.bcmn6.mongodb.net/Cluster0?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://localhost:27017/app',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))

@@ -1,10 +1,11 @@
 const Sauce = require('../models/sauce');
-
+const express =require('express');
 const fs = require('fs');
+const router =express.Router()
 
 // Controleurs des Sauces
 
-exports.getAllSauces = (req, res, next) => {
+router.get('/',(req, res, next) => {
   Sauce.find()
     .then((sauces) => {
       res.status(200).json(sauces);
@@ -16,9 +17,9 @@ exports.getAllSauces = (req, res, next) => {
         });
       }
     );
-};
+});
 
-exports.getOneSauce = (req, res, next) => {
+router.get('/:id',(req, res, next) => {
   Sauce.findOne({
     _id: req.params.id
   }).then(
@@ -32,9 +33,9 @@ exports.getOneSauce = (req, res, next) => {
       });
     }
   );
-};
+});
 
-exports.createSauce = (req, res, next) => {
+ router.post('/',(req, res, next) => {
   const sauceObject = JSON.parse(req.body.sauce)
   delete sauceObject._id;
   const sauce = new Sauce({
@@ -49,9 +50,9 @@ exports.createSauce = (req, res, next) => {
     .save()
     .then(() => res.status(201).json({ message: "Sauce enregistrée" }))
     .catch((error) => res.status(400).json({ error }));
-};
+});
 
-exports.modifySauce = (req, res, next) => {
+router.put('/:id',(req, res, next) => {
   const sauceObject = req.file ?
     {
       ...JSON.parse(req.body.sauce),
@@ -60,9 +61,9 @@ exports.modifySauce = (req, res, next) => {
   Sauce.updateOne({ _id: req.params.id }, { ...sauceObject, _id: req.params.id })
     .then(() => res.status(200).json({ message: 'Objet modifié !' }))
     .catch(error => res.status(400).json({ error }));
-};
+});
 
-exports.deleteSauce = (req, res, next) => {
+router.delete('/:id',(req, res, next) => {
   Sauce.findOne({ _id: req.params.id })
     .then(sauce => {
       const filename = sauce.imageUrl.split('/images/')[1];
@@ -73,9 +74,9 @@ exports.deleteSauce = (req, res, next) => {
       });
     })
     .catch(error => res.status(500).json({ error }));
-};
+});
 
-exports.likeDislikeSauce = (req, res, next) => {
+router.post("/:id/like",(req, res, next) => {
   let like = req.body.like
   let userId = req.body.userId
   let sauceId = req.params.id
@@ -114,4 +115,5 @@ exports.likeDislikeSauce = (req, res, next) => {
       default:
         console.log(error);
   }
-}
+}) 
+module.exports=router
